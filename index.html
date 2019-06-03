@@ -183,21 +183,25 @@
 
 <script>
   var fireballSize = 22;
-  var getFireballSpeed = function(left){}
+  var getFireballSpeed = function(left){
+    if(left) {
+      return 5;
+    }
+    return 2;
+  }
   wizardSpeed = 3;
-  wizardWidth = 70;
+  wizardWidth = 100;
   getWizardHeight = function() {
     return 1.337 * wizardWidth;
   }
   var getWizardX = function(width) {
-    return width/2.3;
+    return width/2-wizardWidth/2;
   }
   var getWizardY  = function(height) {
-    return height/2.2;
+    return (height/3);
   }
 </script>
 <script src="js/game.js"></script>
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
 </body>
 </html>
