@@ -12,17 +12,17 @@
   var propertiesCharacters = [];
   var characters = [];
 
+  var getRandomNumber = function (max) {
+    return Math.floor(Math.random() * max);
+  };
+
   var getPropertiesCharacters = function () {
     for (var i = 0; i < QUANTITY_CHARACTERS; i++) {
-      var name = NAME_CHARACTERS[Math.floor(Math.random() * NAME_CHARACTERS.length)] + ' ' + SURNAME_CHARACTERS[Math.floor(Math.random() * SURNAME_CHARACTERS.length)];
-      var coatColor = COATS_COLORS[Math.floor(Math.random() * COATS_COLORS.length)];
-      var eyesColor = EYES_COLORS[Math.floor(Math.random() * EYES_COLORS.length)];
 
-      propertiesCharacters[i] =
-      {
-        name: name,
-        coatColor: coatColor,
-        eyesColor: eyesColor
+      propertiesCharacters[i] = {
+        name: NAME_CHARACTERS[getRandomNumber(NAME_CHARACTERS.length - 1)] + ' ' + SURNAME_CHARACTERS[getRandomNumber(SURNAME_CHARACTERS.length - 1)],
+        coatColor: COATS_COLORS[getRandomNumber(COATS_COLORS.length - 1)],
+        eyesColor: EYES_COLORS[getRandomNumber(EYES_COLORS.length - 1)]
       };
     }
 
