@@ -6,7 +6,7 @@
   var pinForMovingDialog = setupDialogElement.querySelector('.upload');
   var artifactInShop = document.querySelector('.setup-artifacts-cell').querySelector('img');
 
-  var doMovingItem = function (movingPin, movableSpace) {
+  var moveItem = function (movingPin, movableSpace) {
     movingPin.addEventListener('mousedown', function (evt) {
       evt.preventDefault();
 
@@ -67,7 +67,7 @@
     });
   };
 
-  doMovingItem(pinForMovingDialog, setupDialogElement);
-  doMovingItem(artifactInShop, artifactInShop);
+  moveItem(pinForMovingDialog, setupDialogElement);
+  moveItem(artifactInShop, artifactInShop);
 
 })();
