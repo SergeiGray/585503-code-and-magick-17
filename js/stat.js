@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+
   var getMaxElement = function (arr) {
     return Math.max.apply(null, arr);
   };
@@ -43,5 +44,6 @@
       ctx.fillText(names[i], histogramColumnX, CLOUD_HEIGHT - GAP);
     }
   };
+
 })();
 

@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+
   document.querySelector('.setup-similar').classList.remove('hidden');
 
   var characters = [];

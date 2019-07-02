@@ -23,7 +23,6 @@
         eyesColor: window.EYES_COLORS[window.getRandomNumber(window.EYES_COLORS.length - 1)]
       };
     }
-
   };
 
   getPropertiesCharacters();
