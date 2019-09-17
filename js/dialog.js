@@ -69,5 +69,4 @@
 
   moveItem(pinForMovingDialog, setupDialogElement);
   moveItem(artifactInShop, artifactInShop);
-
 })();
